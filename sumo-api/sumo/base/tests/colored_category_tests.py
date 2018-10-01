@@ -25,10 +25,10 @@ class TestColoredCategory(unittest.TestCase):
     def test_conversion(self):
         '''Tests creation of object'''
         self.assertEqual(
-            self.colored_categoty.from_category_id_to_rgb(133), (205, 145, 158)
+            self.colored_categoty.category_id_to_rgb(133), (205, 145, 158)
         )
         self.assertEqual(
-            self.colored_categoty.from_category_name_to_rgb('shoes'), (205, 145, 158)
+            self.colored_categoty.category_name_to_rgb('shoes'), (205, 145, 158)
         )
 
     def test_lut(self):
